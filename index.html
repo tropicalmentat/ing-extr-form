@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <title>My test page</title>
     <link href="styles/style.css" rel="stylesheet">
+    <style>
+    	form {
+			  /* Center the form on the page */
+			  margin: 0 auto;
+			  width: 400px;
+			  /* Form outline */
+			  padding: 1em;
+			  /*border: 1px solid #CCC;*/
+			  /*border-radius: 1em;*/
+			}
+    </style>
   </head>
   <body>
   	<h1>Ingredients extraction</h1>
@@ -15,12 +26,16 @@
   		<li>
   			<!-- <label for="recipe-url">URL:</label> -->
   			<input type="text" id="url" name="recipe_url">
+  			<!-- <button type='submit'>Send URL</button> -->
   		</li>
   		<li>
-  			<input type="text" id="recipe" name="recipe">
+  			<textarea>Copy and paste ingredients here</textarea>
+  			<button type='submit'>Extract ingredients</button>
   		</li>
   		<li>
-  			<input type="text" id="cleaned_recipe" name="cleaned">
+  			<!-- <input type="text" id="cleaned_recipe" name="cleaned"> -->
+  			<textarea></textarea>
+  			<button type='submit'>Post ingredients</button>
   		</li>
   	</ul>
   </form>
