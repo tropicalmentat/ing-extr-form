@@ -3,10 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>My test page</title>
+    <link href="styles/style.css" rel="stylesheet">
   </head>
   <body>
   	<h1>Ingredients extraction</h1>
   	<p>A data collection service to extract ingredients from Filipino recipes.</p>
-    <img src="images/sequence_diagram.png" alt="My test image">
+   <!--  <img src="images/sequence_diagram.png" alt="My test image"> -->
   </body>
+  <form action="/data" method="post">
+  	<ul>
+  		<li>
+  			<!-- <label for="recipe-url">URL:</label> -->
+  			<input type="text" id="url" name="recipe_url">
+  		</li>
+  		<li>
+  			<input type="text" id="recipe" name="recipe">
+  		</li>
+  		<li>
+  			<input type="text" id="cleaned_recipe" name="cleaned">
+  		</li>
+  	</ul>
+  </form>
+
 </html>
