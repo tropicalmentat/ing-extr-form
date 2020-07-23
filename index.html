@@ -7,10 +7,11 @@
     <style>
     	form {
 			  /* Center the form on the page */
-			  margin: 0 auto;
+			  /*margin: 0 auto;*/
+			  float:left;
 			  width: 400px;
 			  /* Form outline */
-			  padding: 1em;
+			  /*padding: 1em;*/
 			  /*border: 1px solid #CCC;*/
 			  /*border-radius: 1em;*/
 			}
@@ -30,12 +31,12 @@
   		</li>
   		<li>
   			<!-- <label for="raw">Raw:</label> -->
-  			<textarea id='raw'>Copy and paste ingredients here</textarea>
+  			<textarea cols="30" rows="8" id='raw'>Copy and paste ingredients here</textarea>
   			<button type='submit', name='raw_ingredients'>Extract ingredients</button>
   		</li>
   		<li>
   			<!-- <label for="cleaned">Cleaned:</label> -->
-  			<textarea id="cleaned"></textarea>
+  			<textarea cols="30" rows="8" id="cleaned"></textarea>
   			<button type='submit' name='extracted_ingredients'>Post ingredients</button>
   		</li>
   	</ul>
