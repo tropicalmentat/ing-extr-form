@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>My test page</title>
     <link href="styles/style.css" rel="stylesheet">
-    <style>
+<!--     <style>
     	form {
 			  /* Center the form on the page */
 			  /*margin: 0 auto;*/
@@ -15,7 +15,7 @@
 			  /*border: 1px solid #CCC;*/
 			  /*border-radius: 1em;*/
 			}
-    </style>
+    </style> -->
   </head>
   <body>
   	<h1>Ingredients extraction</h1>
@@ -25,18 +25,25 @@
   <form action="/data" method="post">
   	<ul>
   		<li>
-  			<!-- <label for="url">URL:</label> -->
-  			<input type="text" id="url" name="recipe_url">
+  			<label for="url">URL</label>
+  			<input size="30" type="text" id="url" name="recipe_url">
   			<!-- <button type='submit'>Send URL</button> -->
   		</li>
   		<li>
-  			<!-- <label for="raw">Raw:</label> -->
-  			<textarea cols="30" rows="8" id='raw'>Copy and paste ingredients here</textarea>
-  			<button type='submit', name='raw_ingredients'>Extract ingredients</button>
+  			<label for="url">Recipe Name</label>
+  			<input size="30" type="text" id="recipe" name="recipe_name">
   		</li>
   		<li>
-  			<!-- <label for="cleaned">Cleaned:</label> -->
-  			<textarea cols="30" rows="8" id="cleaned"></textarea>
+  			<label for="raw">Raw List</label>
+  			<textarea cols="50" rows="8" id='raw'>Copy and paste ingredients here</textarea>
+  			
+  		</li>
+  		<li>
+  			<label for="cleaned">Extracted text</label>
+  			<textarea cols="50" rows="8" id="cleaned"></textarea>
+  		</li>
+  		<li>
+  			<button type='submit', name='raw_ingredients'>Extract text</button>
   			<button type='submit' name='extracted_ingredients'>Post ingredients</button>
   		</li>
   	</ul>
